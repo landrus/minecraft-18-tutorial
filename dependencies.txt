@@ -1,0 +1,1206 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. See https://docs.gradle.org/7.3/userguide/gradle_daemon.html#sec:disabling_the_daemon.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Java: 17.0.2 JVM: 17.0.2+0(Homebrew) Arch: x86_64
+
+> Task :dependencies
+
+------------------------------------------------------------
+Root project 'minecraft-tutorial-plugin'
+------------------------------------------------------------
+
+__obfuscated - Generated scope for obfuscated dependencies
++--- mezz.jei:jei-1.18.1:9.4.1.106
+\--- curse.maven:the-one-probe-245211:3606616
+
+_compileJava_1
++--- net.minecraft:client:1.18.1
+|    +--- com.mojang:blocklist:1.0.6
+|    +--- com.mojang:patchy:2.1.6
+|    +--- com.github.oshi:oshi-core:5.8.2
+|    |    +--- net.java.dev.jna:jna:5.9.0
+|    |    +--- net.java.dev.jna:jna-platform:5.9.0
+|    |    |    \--- net.java.dev.jna:jna:5.9.0
+|    |    \--- org.slf4j:slf4j-api:1.7.32 -> 1.8.0-beta4
+|    +--- net.java.dev.jna:jna:5.9.0
+|    +--- net.java.dev.jna:jna-platform:5.9.0 (*)
+|    +--- org.slf4j:slf4j-api:1.8.0-beta4
+|    +--- org.apache.logging.log4j:log4j-slf4j18-impl:2.14.1 -> 2.15.0
+|    |    +--- org.slf4j:slf4j-api:1.8.0-beta4
+|    |    +--- org.apache.logging.log4j:log4j-api:2.15.0 -> 2.17.1
+|    |    \--- org.apache.logging.log4j:log4j-core:2.15.0 -> 2.17.1
+|    |         \--- org.apache.logging.log4j:log4j-api:2.17.1
+|    +--- com.ibm.icu:icu4j:69.1
+|    +--- com.mojang:javabridge:1.2.24
+|    +--- net.sf.jopt-simple:jopt-simple:5.0.4
+|    +--- io.netty:netty-all:4.1.68.Final
+|    +--- com.google.guava:failureaccess:1.0.1
+|    +--- com.google.guava:guava:31.0.1-jre
+|    |    +--- com.google.guava:failureaccess:1.0.1
+|    |    +--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
+|    |    +--- com.google.code.findbugs:jsr305:3.0.2
+|    |    +--- org.checkerframework:checker-qual:3.12.0
+|    |    +--- com.google.errorprone:error_prone_annotations:2.7.1
+|    |    \--- com.google.j2objc:j2objc-annotations:1.3
+|    +--- org.apache.commons:commons-lang3:3.12.0
+|    +--- commons-io:commons-io:2.11.0
+|    +--- commons-codec:commons-codec:1.15
+|    +--- com.mojang:brigadier:1.0.18
+|    +--- com.mojang:datafixerupper:4.0.26
+|    +--- com.google.code.gson:gson:2.8.8
+|    +--- com.mojang:authlib:3.2.38
+|    +--- org.apache.commons:commons-compress:1.21
+|    +--- org.apache.httpcomponents:httpclient:4.5.13
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.13 -> 4.4.14
+|    |    +--- commons-logging:commons-logging:1.2
+|    |    \--- commons-codec:commons-codec:1.11 -> 1.15
+|    +--- commons-logging:commons-logging:1.2
+|    +--- org.apache.httpcomponents:httpcore:4.4.14
+|    +--- it.unimi.dsi:fastutil:8.5.6
+|    +--- org.apache.logging.log4j:log4j-api:2.14.1 -> 2.17.1
+|    +--- org.apache.logging.log4j:log4j-core:2.14.1 -> 2.17.1 (*)
+|    +--- org.lwjgl:lwjgl:3.2.1
+|    +--- org.lwjgl:lwjgl-jemalloc:3.2.1
+|    |    \--- org.lwjgl:lwjgl:3.2.1
+|    +--- org.lwjgl:lwjgl-openal:3.2.1
+|    |    \--- org.lwjgl:lwjgl:3.2.1
+|    +--- org.lwjgl:lwjgl-opengl:3.2.1
+|    |    \--- org.lwjgl:lwjgl:3.2.1
+|    +--- org.lwjgl:lwjgl-glfw:3.2.1
+|    |    \--- org.lwjgl:lwjgl:3.2.1
+|    +--- org.lwjgl:lwjgl-stb:3.2.1
+|    |    \--- org.lwjgl:lwjgl:3.2.1
+|    +--- org.lwjgl:lwjgl-tinyfd:3.2.1
+|    |    \--- org.lwjgl:lwjgl:3.2.1
+|    +--- com.mojang:text2speech:1.11.3
+|    +--- ca.weblite:java-objc-bridge:1.0.0
+|    |    \--- net.java.dev.jna:jna:4.1.0 -> 5.9.0
+|    +--- com.google.code.findbugs:jsr305:3.0.1 -> 3.0.2
+|    \--- org.jetbrains:annotations:23.0.0
++--- com.google.code.findbugs:jsr305:3.0.1 -> 3.0.2
++--- ca.weblite:java-objc-bridge:1.0.0 (*)
++--- net.minecraftforge:mergetool:1.1.3
+|    +--- org.ow2.asm:asm:9.1 -> 9.2
+|    +--- org.ow2.asm:asm-tree:9.1 -> 9.2
+|    |    \--- org.ow2.asm:asm:9.2
+|    +--- org.ow2.asm:asm-util:9.1 -> 9.2
+|    |    +--- org.ow2.asm:asm:9.2
+|    |    +--- org.ow2.asm:asm-tree:9.2 (*)
+|    |    \--- org.ow2.asm:asm-analysis:9.2
+|    |         \--- org.ow2.asm:asm-tree:9.2 (*)
+|    +--- net.sf.jopt-simple:jopt-simple:5.0.4
+|    \--- net.minecraftforge:srgutils:0.4.3
++--- org.jetbrains:annotations:23.0.0
++--- cpw.mods:securejarhandler:1.0.1 -> 1.0.3
+|    +--- org.ow2.asm:asm:9.1 -> 9.2
+|    +--- org.ow2.asm:asm-tree:9.1 -> 9.2 (*)
+|    \--- org.ow2.asm:asm-commons:9.1 -> 9.2
+|         +--- org.ow2.asm:asm:9.2
+|         +--- org.ow2.asm:asm-tree:9.2 (*)
+|         \--- org.ow2.asm:asm-analysis:9.2 (*)
++--- org.ow2.asm:asm:9.2
++--- org.ow2.asm:asm-commons:9.2 (*)
++--- org.ow2.asm:asm-tree:9.2 (*)
++--- org.ow2.asm:asm-util:9.2 (*)
++--- org.ow2.asm:asm-analysis:9.2 (*)
++--- net.minecraftforge:accesstransformers:8.0.4
+|    +--- org.antlr:antlr4-runtime:4.9.1
+|    +--- net.sf.jopt-simple:jopt-simple:5.0.4
+|    +--- org.ow2.asm:asm:9.1 -> 9.2
+|    +--- org.ow2.asm:asm-commons:9.1 -> 9.2 (*)
+|    +--- org.ow2.asm:asm-tree:9.1 -> 9.2 (*)
+|    +--- org.apache.logging.log4j:log4j-api:2.11.+ -> 2.17.1
+|    +--- org.apache.logging.log4j:log4j-core:2.11.+ -> 2.17.1 (*)
+|    +--- cpw.mods:modlauncher:9.0.4 -> 9.1.0
+|    |    +--- net.sf.jopt-simple:jopt-simple:5.0.4
+|    |    +--- org.apache.logging.log4j:log4j-api:2.17.1
+|    |    +--- org.apache.logging.log4j:log4j-core:2.17.1 (*)
+|    |    +--- cpw.mods:securejarhandler:1.0.+ -> 1.0.3 (*)
+|    |    +--- org.ow2.asm:asm:9.2
+|    |    +--- org.ow2.asm:asm-tree:9.2 (*)
+|    |    \--- org.ow2.asm:asm-commons:9.2 (*)
+|    \--- org.antlr:antlr4:4.9.1
+|         +--- org.antlr:antlr4-runtime:4.9.1
+|         +--- org.antlr:antlr-runtime:3.5.2
+|         +--- org.antlr:ST4:4.3
+|         |    \--- org.antlr:antlr-runtime:3.5.2
+|         +--- org.abego.treelayout:org.abego.treelayout.core:1.0.3
+|         +--- org.glassfish:javax.json:1.0.4
+|         \--- com.ibm.icu:icu4j:61.1 -> 69.1
++--- org.antlr:antlr4-runtime:4.9.1
++--- net.minecraftforge:eventbus:5.0.3 -> 5.0.7
+|    +--- org.ow2.asm:asm:9.1 -> 9.2
+|    +--- org.ow2.asm:asm-commons:9.1 -> 9.2 (*)
+|    +--- org.ow2.asm:asm-tree:9.1 -> 9.2 (*)
+|    +--- org.apache.logging.log4j:log4j-api:2.14.1 -> 2.17.1
+|    +--- cpw.mods:modlauncher:9.0.+ -> 9.1.0 (*)
+|    \--- net.jodah:typetools:0.8.+ -> 0.8.3
++--- net.minecraftforge:forgespi:4.0.10 -> 4.0.11
+|    +--- cpw.mods:modlauncher:9.0.7 -> 9.1.0 (*)
+|    +--- org.ow2.asm:asm:9.1 -> 9.2
+|    +--- org.ow2.asm:asm-commons:9.1 -> 9.2 (*)
+|    +--- org.ow2.asm:asm-tree:9.1 -> 9.2 (*)
+|    +--- org.apache.logging.log4j:log4j-api:2.14.1 -> 2.17.1
+|    +--- org.apache.maven:maven-artifact:3.8.1
+|    |    +--- org.codehaus.plexus:plexus-utils:3.2.1
+|    |    \--- org.apache.commons:commons-lang3:3.8.1 -> 3.12.0
+|    \--- cpw.mods:securejarhandler:0.9.52 -> 1.0.3 (*)
++--- net.minecraftforge:coremods:5.0.1 -> 5.0.2
+|    +--- cpw.mods:modlauncher:9.0.+ -> 9.1.0 (*)
+|    +--- org.apache.logging.log4j:log4j-api:2.14.1 -> 2.17.1
+|    +--- org.ow2.asm:asm:9.1 -> 9.2
+|    +--- org.ow2.asm:asm-commons:9.1 -> 9.2 (*)
+|    +--- org.ow2.asm:asm-tree:9.1 -> 9.2 (*)
+|    +--- org.ow2.asm:asm-util:9.1 -> 9.2 (*)
+|    +--- net.minecraftforge:forgespi:4.0.+ -> 4.0.11 (*)
+|    \--- org.openjdk.nashorn:nashorn-core:15.1.1 -> 15.3
+|         +--- org.ow2.asm:asm:7.3.1 -> 9.2
+|         +--- org.ow2.asm:asm-commons:7.3.1 -> 9.2 (*)
+|         +--- org.ow2.asm:asm-tree:7.3.1 -> 9.2 (*)
+|         \--- org.ow2.asm:asm-util:7.3.1 -> 9.2 (*)
++--- cpw.mods:modlauncher:9.1.0 (*)
++--- net.minecraftforge:unsafe:0.2.0
+|    +--- org.apache.logging.log4j:log4j-api:2.11.+ -> 2.17.1
+|    \--- org.apache.logging.log4j:log4j-core:2.11.+ -> 2.17.1 (*)
++--- com.electronwill.night-config:core:3.6.4
++--- com.electronwill.night-config:toml:3.6.4
+|    \--- com.electronwill.night-config:core:3.6.4
++--- org.apache.maven:maven-artifact:3.6.3 -> 3.8.1 (*)
++--- org.apache.commons:commons-lang3:3.12.0
++--- net.jodah:typetools:0.8.3
++--- org.apache.logging.log4j:log4j-api:2.15.0 -> 2.17.1
++--- org.apache.logging.log4j:log4j-core:2.15.0 -> 2.17.1 (*)
++--- org.apache.logging.log4j:log4j-slf4j18-impl:2.15.0 (*)
++--- net.minecrell:terminalconsoleappender:1.2.0
+|    +--- org.apache.logging.log4j:log4j-core:2.8.1 -> 2.17.1 (*)
+|    \--- org.jline:jline-reader:3.12.1
+|         \--- org.jline:jline-terminal:3.12.1
++--- org.jline:jline-reader:3.12.1 (*)
++--- org.jline:jline-terminal:3.12.1
++--- net.sf.jopt-simple:jopt-simple:5.0.4
++--- org.spongepowered:mixin:0.8.5
++--- org.openjdk.nashorn:nashorn-core:15.3 (*)
++--- com.google.guava:guava:31.0.1-jre (*)
++--- com.google.code.gson:gson:2.8.8
++--- cpw.mods:bootstraplauncher:1.0.0
+|    \--- cpw.mods:securejarhandler:1.0.1 -> 1.0.3 (*)
++--- net.minecraftforge:fmlcore:1.18.1-39.0.85
+|    +--- net.minecraftforge:fmlloader:1.18.1-39.0.85
+|    |    +--- net.sf.jopt-simple:jopt-simple:5.0.4
+|    |    +--- cpw.mods:securejarhandler:1.0.1 -> 1.0.3 (*)
+|    |    +--- org.apache.logging.log4j:log4j-core:2.14.1 -> 2.17.1 (*)
+|    |    +--- net.minecraftforge:accesstransformers:8.0.4 (*)
+|    |    +--- net.minecrell:terminalconsoleappender:1.2.0 (*)
+|    |    +--- org.ow2.asm:asm:9.2
+|    |    +--- org.ow2.asm:asm-tree:9.2 (*)
+|    |    +--- org.ow2.asm:asm-commons:9.2 (*)
+|    |    +--- net.minecraftforge:forgespi:4.0.+ -> 4.0.11 (*)
+|    |    +--- org.apache.logging.log4j:log4j-api:2.14.1 -> 2.17.1
+|    |    +--- com.google.guava:guava:21.0 -> 31.0.1-jre (*)
+|    |    +--- com.google.code.gson:gson:2.8.0 -> 2.8.8
+|    |    +--- org.apache.maven:maven-artifact:3.8.1 (*)
+|    |    +--- org.apache.commons:commons-lang3:3.8.1 -> 3.12.0
+|    |    +--- com.electronwill.night-config:core:3.6.3 -> 3.6.4
+|    |    +--- com.electronwill.night-config:toml:3.6.3 -> 3.6.4 (*)
+|    |    +--- cpw.mods:modlauncher:9.0.+ -> 9.1.0 (*)
+|    |    \--- net.minecraftforge:coremods:5.0.+ -> 5.0.2 (*)
+|    +--- commons-io:commons-io:2.5 -> 2.11.0
+|    \--- net.minecraftforge:eventbus:5.0.+ -> 5.0.7 (*)
++--- net.minecraftforge:fmlloader:1.18.1-39.0.85 (*)
++--- net.minecraftforge:javafmllanguage:1.18.1-39.0.85
+|    +--- net.minecraftforge:fmlloader:1.18.1-39.0.85 (*)
+|    \--- net.minecraftforge:fmlcore:1.18.1-39.0.85 (*)
+\--- net.minecraftforge:mclanguage:1.18.1-39.0.85
+     +--- net.minecraftforge:fmlloader:1.18.1-39.0.85 (*)
+     \--- net.minecraftforge:fmlcore:1.18.1-39.0.85 (*)
+
+annotationProcessor - Annotation processors and their dependencies for source set 'main'.
+No dependencies
+
+apiElements - API elements for main. (n)
+No dependencies
+
+archives - Configuration for archive artifacts. (n)
+No dependencies
+
+compileClasspath - Compile classpath for source set 'main'.
++--- mezz.jei:jei-1.18.1:{strictly 9.4.1.106_mapped_parchment_2022.02.13-1.18.1} -> 9.4.1.106_mapped_parchment_2022.02.13-1.18.1
++--- curse.maven:the-one-probe-245211:{strictly 3606616_mapped_parchment_2022.02.13-1.18.1} -> 3606616_mapped_parchment_2022.02.13-1.18.1
+\--- net.minecraftforge:forge:1.18.1-39.0.85_mapped_parchment_2022.02.13-1.18.1
+     +--- net.minecraft:client:1.18.1
+     |    +--- com.mojang:blocklist:1.0.6
+     |    +--- com.mojang:patchy:2.1.6
+     |    +--- com.github.oshi:oshi-core:5.8.2
+     |    |    +--- net.java.dev.jna:jna:5.9.0
+     |    |    +--- net.java.dev.jna:jna-platform:5.9.0
+     |    |    |    \--- net.java.dev.jna:jna:5.9.0
+     |    |    \--- org.slf4j:slf4j-api:1.7.32 -> 1.8.0-beta4
+     |    +--- net.java.dev.jna:jna:5.9.0
+     |    +--- net.java.dev.jna:jna-platform:5.9.0 (*)
+     |    +--- org.slf4j:slf4j-api:1.8.0-beta4
+     |    +--- org.apache.logging.log4j:log4j-slf4j18-impl:2.14.1 -> 2.15.0
+     |    |    +--- org.slf4j:slf4j-api:1.8.0-beta4
+     |    |    \--- org.apache.logging.log4j:log4j-api:2.15.0
+     |    +--- com.ibm.icu:icu4j:69.1
+     |    +--- com.mojang:javabridge:1.2.24
+     |    +--- net.sf.jopt-simple:jopt-simple:5.0.4
+     |    +--- io.netty:netty-all:4.1.68.Final
+     |    +--- com.google.guava:failureaccess:1.0.1
+     |    +--- com.google.guava:guava:31.0.1-jre
+     |    |    +--- com.google.guava:failureaccess:1.0.1
+     |    |    +--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
+     |    |    +--- com.google.code.findbugs:jsr305:3.0.2
+     |    |    +--- org.checkerframework:checker-qual:3.12.0
+     |    |    +--- com.google.errorprone:error_prone_annotations:2.7.1
+     |    |    \--- com.google.j2objc:j2objc-annotations:1.3
+     |    +--- org.apache.commons:commons-lang3:3.12.0
+     |    +--- commons-io:commons-io:2.11.0
+     |    +--- commons-codec:commons-codec:1.15
+     |    +--- com.mojang:brigadier:1.0.18
+     |    +--- com.mojang:datafixerupper:4.0.26
+     |    +--- com.google.code.gson:gson:2.8.8
+     |    +--- com.mojang:authlib:3.2.38
+     |    +--- org.apache.commons:commons-compress:1.21
+     |    +--- org.apache.httpcomponents:httpclient:4.5.13
+     |    |    +--- org.apache.httpcomponents:httpcore:4.4.13 -> 4.4.14
+     |    |    +--- commons-logging:commons-logging:1.2
+     |    |    \--- commons-codec:commons-codec:1.11 -> 1.15
+     |    +--- commons-logging:commons-logging:1.2
+     |    +--- org.apache.httpcomponents:httpcore:4.4.14
+     |    +--- it.unimi.dsi:fastutil:8.5.6
+     |    +--- org.apache.logging.log4j:log4j-api:2.14.1 -> 2.15.0
+     |    +--- org.apache.logging.log4j:log4j-core:2.14.1 -> 2.15.0
+     |    |    \--- org.apache.logging.log4j:log4j-api:2.15.0
+     |    +--- org.lwjgl:lwjgl:3.2.1
+     |    +--- org.lwjgl:lwjgl-jemalloc:3.2.1
+     |    |    \--- org.lwjgl:lwjgl:3.2.1
+     |    +--- org.lwjgl:lwjgl-openal:3.2.1
+     |    |    \--- org.lwjgl:lwjgl:3.2.1
+     |    +--- org.lwjgl:lwjgl-opengl:3.2.1
+     |    |    \--- org.lwjgl:lwjgl:3.2.1
+     |    +--- org.lwjgl:lwjgl-glfw:3.2.1
+     |    |    \--- org.lwjgl:lwjgl:3.2.1
+     |    +--- org.lwjgl:lwjgl-stb:3.2.1
+     |    |    \--- org.lwjgl:lwjgl:3.2.1
+     |    +--- org.lwjgl:lwjgl-tinyfd:3.2.1
+     |    |    \--- org.lwjgl:lwjgl:3.2.1
+     |    +--- com.mojang:text2speech:1.11.3
+     |    +--- ca.weblite:java-objc-bridge:1.0.0
+     |    |    \--- net.java.dev.jna:jna:4.1.0 -> 5.9.0
+     |    +--- com.google.code.findbugs:jsr305:3.0.1 -> 3.0.2
+     |    \--- org.jetbrains:annotations:23.0.0
+     +--- com.google.code.findbugs:jsr305:3.0.1 -> 3.0.2
+     +--- ca.weblite:java-objc-bridge:1.0.0 (*)
+     +--- net.minecraftforge:mergetool:1.1.3
+     +--- org.jetbrains:annotations:23.0.0
+     +--- net.minecraft:mappings_parchment:2022.02.13-1.18.1
+     +--- cpw.mods:securejarhandler:1.0.1
+     |    +--- org.ow2.asm:asm:9.1 -> 9.2
+     |    +--- org.ow2.asm:asm-tree:9.1 -> 9.2
+     |    |    \--- org.ow2.asm:asm:9.2
+     |    \--- org.ow2.asm:asm-commons:9.1 -> 9.2
+     |         +--- org.ow2.asm:asm:9.2
+     |         +--- org.ow2.asm:asm-tree:9.2 (*)
+     |         \--- org.ow2.asm:asm-analysis:9.2
+     |              \--- org.ow2.asm:asm-tree:9.2 (*)
+     +--- org.ow2.asm:asm:9.2
+     +--- org.ow2.asm:asm-commons:9.2 (*)
+     +--- org.ow2.asm:asm-tree:9.2 (*)
+     +--- org.ow2.asm:asm-util:9.2
+     |    +--- org.ow2.asm:asm:9.2
+     |    +--- org.ow2.asm:asm-tree:9.2 (*)
+     |    \--- org.ow2.asm:asm-analysis:9.2 (*)
+     +--- org.ow2.asm:asm-analysis:9.2 (*)
+     +--- net.minecraftforge:accesstransformers:8.0.4
+     |    \--- org.antlr:antlr4:4.9.1
+     |         +--- org.antlr:antlr4-runtime:4.9.1
+     |         +--- org.antlr:antlr-runtime:3.5.2
+     |         +--- org.antlr:ST4:4.3
+     |         |    \--- org.antlr:antlr-runtime:3.5.2
+     |         +--- org.abego.treelayout:org.abego.treelayout.core:1.0.3
+     |         +--- org.glassfish:javax.json:1.0.4
+     |         \--- com.ibm.icu:icu4j:61.1 -> 69.1
+     +--- org.antlr:antlr4-runtime:4.9.1
+     +--- net.minecraftforge:eventbus:5.0.3 -> 5.0.7
+     |    \--- net.jodah:typetools:0.8.+ -> 0.8.3
+     +--- net.minecraftforge:forgespi:4.0.10 -> 4.0.11
+     +--- net.minecraftforge:coremods:5.0.1 -> 5.0.2
+     +--- cpw.mods:modlauncher:9.1.0
+     |    +--- org.ow2.asm:asm:9.2
+     |    +--- org.ow2.asm:asm-tree:9.2 (*)
+     |    \--- org.ow2.asm:asm-commons:9.2 (*)
+     +--- net.minecraftforge:unsafe:0.2.0
+     +--- com.electronwill.night-config:core:3.6.4
+     +--- com.electronwill.night-config:toml:3.6.4
+     |    \--- com.electronwill.night-config:core:3.6.4
+     +--- org.apache.maven:maven-artifact:3.6.3 -> 3.8.1
+     |    +--- org.codehaus.plexus:plexus-utils:3.2.1
+     |    \--- org.apache.commons:commons-lang3:3.8.1 -> 3.12.0
+     +--- org.apache.commons:commons-lang3:3.12.0
+     +--- net.jodah:typetools:0.8.3
+     +--- org.apache.logging.log4j:log4j-api:2.15.0
+     +--- org.apache.logging.log4j:log4j-core:2.15.0 (*)
+     +--- org.apache.logging.log4j:log4j-slf4j18-impl:2.15.0 (*)
+     +--- net.minecrell:terminalconsoleappender:1.2.0
+     |    +--- org.apache.logging.log4j:log4j-core:2.8.1 -> 2.15.0 (*)
+     |    \--- org.jline:jline-reader:3.12.1
+     |         \--- org.jline:jline-terminal:3.12.1
+     +--- org.jline:jline-reader:3.12.1 (*)
+     +--- org.jline:jline-terminal:3.12.1
+     +--- net.sf.jopt-simple:jopt-simple:5.0.4
+     +--- org.spongepowered:mixin:0.8.5
+     +--- org.openjdk.nashorn:nashorn-core:15.3
+     |    +--- org.ow2.asm:asm:7.3.1 -> 9.2
+     |    +--- org.ow2.asm:asm-commons:7.3.1 -> 9.2 (*)
+     |    +--- org.ow2.asm:asm-tree:7.3.1 -> 9.2 (*)
+     |    \--- org.ow2.asm:asm-util:7.3.1 -> 9.2 (*)
+     +--- com.google.guava:guava:31.0.1-jre (*)
+     +--- com.google.code.gson:gson:2.8.8
+     +--- cpw.mods:bootstraplauncher:1.0.0
+     +--- net.minecraftforge:fmlcore:1.18.1-39.0.85
+     |    \--- net.minecraftforge:eventbus:5.0.+ -> 5.0.7 (*)
+     +--- net.minecraftforge:fmlloader:1.18.1-39.0.85
+     |    +--- org.ow2.asm:asm:9.2
+     |    +--- org.ow2.asm:asm-tree:9.2 (*)
+     |    +--- org.ow2.asm:asm-commons:9.2 (*)
+     |    +--- net.minecraftforge:forgespi:4.0.+ -> 4.0.11
+     |    +--- org.apache.logging.log4j:log4j-api:2.14.1 -> 2.15.0
+     |    +--- com.google.guava:guava:21.0 -> 31.0.1-jre (*)
+     |    +--- com.google.code.gson:gson:2.8.0 -> 2.8.8
+     |    +--- org.apache.maven:maven-artifact:3.8.1 (*)
+     |    +--- org.apache.commons:commons-lang3:3.8.1 -> 3.12.0
+     |    +--- com.electronwill.night-config:core:3.6.3 -> 3.6.4
+     |    +--- com.electronwill.night-config:toml:3.6.3 -> 3.6.4 (*)
+     |    +--- cpw.mods:modlauncher:9.0.+ -> 9.1.0 (*)
+     |    \--- net.minecraftforge:coremods:5.0.+ -> 5.0.2
+     +--- net.minecraftforge:javafmllanguage:1.18.1-39.0.85
+     \--- net.minecraftforge:mclanguage:1.18.1-39.0.85
+
+compileOnly - Compile only dependencies for source set 'main'. (n)
+\--- mezz.jei:jei-1.18.1:9.4.1.106_mapped_parchment_2022.02.13-1.18.1 (n)
+
+default - Configuration for default artifacts. (n)
+No dependencies
+
+implementation - Implementation only dependencies for source set 'main'. (n)
+\--- curse.maven:the-one-probe-245211:3606616_mapped_parchment_2022.02.13-1.18.1 (n)
+
+minecraft
+\--- net.minecraftforge:forge:1.18.1-39.0.85_mapped_parchment_2022.02.13-1.18.1
+     +--- net.minecraft:client:1.18.1
+     |    +--- com.mojang:blocklist:1.0.6
+     |    +--- com.mojang:patchy:2.1.6
+     |    +--- com.github.oshi:oshi-core:5.8.2
+     |    |    +--- net.java.dev.jna:jna:5.9.0
+     |    |    +--- net.java.dev.jna:jna-platform:5.9.0
+     |    |    |    \--- net.java.dev.jna:jna:5.9.0
+     |    |    \--- org.slf4j:slf4j-api:1.7.32 -> 1.8.0-beta4
+     |    +--- net.java.dev.jna:jna:5.9.0
+     |    +--- net.java.dev.jna:jna-platform:5.9.0 (*)
+     |    +--- org.slf4j:slf4j-api:1.8.0-beta4
+     |    +--- org.apache.logging.log4j:log4j-slf4j18-impl:2.14.1 -> 2.15.0
+     |    |    +--- org.slf4j:slf4j-api:1.8.0-beta4
+     |    |    +--- org.apache.logging.log4j:log4j-api:2.15.0 -> 2.17.1
+     |    |    \--- org.apache.logging.log4j:log4j-core:2.15.0 -> 2.17.1
+     |    |         \--- org.apache.logging.log4j:log4j-api:2.17.1
+     |    +--- com.ibm.icu:icu4j:69.1
+     |    +--- com.mojang:javabridge:1.2.24
+     |    +--- net.sf.jopt-simple:jopt-simple:5.0.4
+     |    +--- io.netty:netty-all:4.1.68.Final
+     |    +--- com.google.guava:failureaccess:1.0.1
+     |    +--- com.google.guava:guava:31.0.1-jre
+     |    |    +--- com.google.guava:failureaccess:1.0.1
+     |    |    +--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
+     |    |    +--- com.google.code.findbugs:jsr305:3.0.2
+     |    |    +--- org.checkerframework:checker-qual:3.12.0
+     |    |    +--- com.google.errorprone:error_prone_annotations:2.7.1
+     |    |    \--- com.google.j2objc:j2objc-annotations:1.3
+     |    +--- org.apache.commons:commons-lang3:3.12.0
+     |    +--- commons-io:commons-io:2.11.0
+     |    +--- commons-codec:commons-codec:1.15
+     |    +--- com.mojang:brigadier:1.0.18
+     |    +--- com.mojang:datafixerupper:4.0.26
+     |    +--- com.google.code.gson:gson:2.8.8
+     |    +--- com.mojang:authlib:3.2.38
+     |    +--- org.apache.commons:commons-compress:1.21
+     |    +--- org.apache.httpcomponents:httpclient:4.5.13
+     |    |    +--- org.apache.httpcomponents:httpcore:4.4.13 -> 4.4.14
+     |    |    +--- commons-logging:commons-logging:1.2
+     |    |    \--- commons-codec:commons-codec:1.11 -> 1.15
+     |    +--- commons-logging:commons-logging:1.2
+     |    +--- org.apache.httpcomponents:httpcore:4.4.14
+     |    +--- it.unimi.dsi:fastutil:8.5.6
+     |    +--- org.apache.logging.log4j:log4j-api:2.14.1 -> 2.17.1
+     |    +--- org.apache.logging.log4j:log4j-core:2.14.1 -> 2.17.1 (*)
+     |    +--- org.lwjgl:lwjgl:3.2.1
+     |    +--- org.lwjgl:lwjgl-jemalloc:3.2.1
+     |    |    \--- org.lwjgl:lwjgl:3.2.1
+     |    +--- org.lwjgl:lwjgl-openal:3.2.1
+     |    |    \--- org.lwjgl:lwjgl:3.2.1
+     |    +--- org.lwjgl:lwjgl-opengl:3.2.1
+     |    |    \--- org.lwjgl:lwjgl:3.2.1
+     |    +--- org.lwjgl:lwjgl-glfw:3.2.1
+     |    |    \--- org.lwjgl:lwjgl:3.2.1
+     |    +--- org.lwjgl:lwjgl-stb:3.2.1
+     |    |    \--- org.lwjgl:lwjgl:3.2.1
+     |    +--- org.lwjgl:lwjgl-tinyfd:3.2.1
+     |    |    \--- org.lwjgl:lwjgl:3.2.1
+     |    +--- com.mojang:text2speech:1.11.3
+     |    +--- ca.weblite:java-objc-bridge:1.0.0
+     |    |    \--- net.java.dev.jna:jna:4.1.0 -> 5.9.0
+     |    +--- com.google.code.findbugs:jsr305:3.0.1 -> 3.0.2
+     |    \--- org.jetbrains:annotations:23.0.0
+     +--- com.google.code.findbugs:jsr305:3.0.1 -> 3.0.2
+     +--- ca.weblite:java-objc-bridge:1.0.0 (*)
+     +--- net.minecraftforge:mergetool:1.1.3
+     |    +--- org.ow2.asm:asm:9.1 -> 9.2
+     |    +--- org.ow2.asm:asm-tree:9.1 -> 9.2
+     |    |    \--- org.ow2.asm:asm:9.2
+     |    +--- org.ow2.asm:asm-util:9.1 -> 9.2
+     |    |    +--- org.ow2.asm:asm:9.2
+     |    |    +--- org.ow2.asm:asm-tree:9.2 (*)
+     |    |    \--- org.ow2.asm:asm-analysis:9.2
+     |    |         \--- org.ow2.asm:asm-tree:9.2 (*)
+     |    +--- net.sf.jopt-simple:jopt-simple:5.0.4
+     |    \--- net.minecraftforge:srgutils:0.4.3
+     +--- org.jetbrains:annotations:23.0.0
+     +--- net.minecraft:mappings_parchment:2022.02.13-1.18.1
+     +--- cpw.mods:securejarhandler:1.0.1 -> 1.0.3
+     |    +--- org.ow2.asm:asm:9.1 -> 9.2
+     |    +--- org.ow2.asm:asm-tree:9.1 -> 9.2 (*)
+     |    \--- org.ow2.asm:asm-commons:9.1 -> 9.2
+     |         +--- org.ow2.asm:asm:9.2
+     |         +--- org.ow2.asm:asm-tree:9.2 (*)
+     |         \--- org.ow2.asm:asm-analysis:9.2 (*)
+     +--- org.ow2.asm:asm:9.2
+     +--- org.ow2.asm:asm-commons:9.2 (*)
+     +--- org.ow2.asm:asm-tree:9.2 (*)
+     +--- org.ow2.asm:asm-util:9.2 (*)
+     +--- org.ow2.asm:asm-analysis:9.2 (*)
+     +--- net.minecraftforge:accesstransformers:8.0.4
+     |    +--- org.antlr:antlr4-runtime:4.9.1
+     |    +--- net.sf.jopt-simple:jopt-simple:5.0.4
+     |    +--- org.ow2.asm:asm:9.1 -> 9.2
+     |    +--- org.ow2.asm:asm-commons:9.1 -> 9.2 (*)
+     |    +--- org.ow2.asm:asm-tree:9.1 -> 9.2 (*)
+     |    +--- org.apache.logging.log4j:log4j-api:2.11.+ -> 2.17.1
+     |    +--- org.apache.logging.log4j:log4j-core:2.11.+ -> 2.17.1 (*)
+     |    +--- cpw.mods:modlauncher:9.0.4 -> 9.1.0
+     |    |    +--- net.sf.jopt-simple:jopt-simple:5.0.4
+     |    |    +--- org.apache.logging.log4j:log4j-api:2.17.1
+     |    |    +--- org.apache.logging.log4j:log4j-core:2.17.1 (*)
+     |    |    +--- cpw.mods:securejarhandler:1.0.+ -> 1.0.3 (*)
+     |    |    +--- org.ow2.asm:asm:9.2
+     |    |    +--- org.ow2.asm:asm-tree:9.2 (*)
+     |    |    \--- org.ow2.asm:asm-commons:9.2 (*)
+     |    \--- org.antlr:antlr4:4.9.1
+     |         +--- org.antlr:antlr4-runtime:4.9.1
+     |         +--- org.antlr:antlr-runtime:3.5.2
+     |         +--- org.antlr:ST4:4.3
+     |         |    \--- org.antlr:antlr-runtime:3.5.2
+     |         +--- org.abego.treelayout:org.abego.treelayout.core:1.0.3
+     |         +--- org.glassfish:javax.json:1.0.4
+     |         \--- com.ibm.icu:icu4j:61.1 -> 69.1
+     +--- org.antlr:antlr4-runtime:4.9.1
+     +--- net.minecraftforge:eventbus:5.0.3 -> 5.0.7
+     |    +--- org.ow2.asm:asm:9.1 -> 9.2
+     |    +--- org.ow2.asm:asm-commons:9.1 -> 9.2 (*)
+     |    +--- org.ow2.asm:asm-tree:9.1 -> 9.2 (*)
+     |    +--- org.apache.logging.log4j:log4j-api:2.14.1 -> 2.17.1
+     |    +--- cpw.mods:modlauncher:9.0.+ -> 9.1.0 (*)
+     |    \--- net.jodah:typetools:0.8.+ -> 0.8.3
+     +--- net.minecraftforge:forgespi:4.0.10 -> 4.0.11
+     |    +--- cpw.mods:modlauncher:9.0.7 -> 9.1.0 (*)
+     |    +--- org.ow2.asm:asm:9.1 -> 9.2
+     |    +--- org.ow2.asm:asm-commons:9.1 -> 9.2 (*)
+     |    +--- org.ow2.asm:asm-tree:9.1 -> 9.2 (*)
+     |    +--- org.apache.logging.log4j:log4j-api:2.14.1 -> 2.17.1
+     |    +--- org.apache.maven:maven-artifact:3.8.1
+     |    |    +--- org.codehaus.plexus:plexus-utils:3.2.1
+     |    |    \--- org.apache.commons:commons-lang3:3.8.1 -> 3.12.0
+     |    \--- cpw.mods:securejarhandler:0.9.52 -> 1.0.3 (*)
+     +--- net.minecraftforge:coremods:5.0.1 -> 5.0.2
+     |    +--- cpw.mods:modlauncher:9.0.+ -> 9.1.0 (*)
+     |    +--- org.apache.logging.log4j:log4j-api:2.14.1 -> 2.17.1
+     |    +--- org.ow2.asm:asm:9.1 -> 9.2
+     |    +--- org.ow2.asm:asm-commons:9.1 -> 9.2 (*)
+     |    +--- org.ow2.asm:asm-tree:9.1 -> 9.2 (*)
+     |    +--- org.ow2.asm:asm-util:9.1 -> 9.2 (*)
+     |    +--- net.minecraftforge:forgespi:4.0.+ -> 4.0.11 (*)
+     |    \--- org.openjdk.nashorn:nashorn-core:15.1.1 -> 15.3
+     |         +--- org.ow2.asm:asm:7.3.1 -> 9.2
+     |         +--- org.ow2.asm:asm-commons:7.3.1 -> 9.2 (*)
+     |         +--- org.ow2.asm:asm-tree:7.3.1 -> 9.2 (*)
+     |         \--- org.ow2.asm:asm-util:7.3.1 -> 9.2 (*)
+     +--- cpw.mods:modlauncher:9.1.0 (*)
+     +--- net.minecraftforge:unsafe:0.2.0
+     |    +--- org.apache.logging.log4j:log4j-api:2.11.+ -> 2.17.1
+     |    \--- org.apache.logging.log4j:log4j-core:2.11.+ -> 2.17.1 (*)
+     +--- com.electronwill.night-config:core:3.6.4
+     +--- com.electronwill.night-config:toml:3.6.4
+     |    \--- com.electronwill.night-config:core:3.6.4
+     +--- org.apache.maven:maven-artifact:3.6.3 -> 3.8.1 (*)
+     +--- org.apache.commons:commons-lang3:3.12.0
+     +--- net.jodah:typetools:0.8.3
+     +--- org.apache.logging.log4j:log4j-api:2.15.0 -> 2.17.1
+     +--- org.apache.logging.log4j:log4j-core:2.15.0 -> 2.17.1 (*)
+     +--- org.apache.logging.log4j:log4j-slf4j18-impl:2.15.0 (*)
+     +--- net.minecrell:terminalconsoleappender:1.2.0
+     |    +--- org.apache.logging.log4j:log4j-core:2.8.1 -> 2.17.1 (*)
+     |    \--- org.jline:jline-reader:3.12.1
+     |         \--- org.jline:jline-terminal:3.12.1
+     +--- org.jline:jline-reader:3.12.1 (*)
+     +--- org.jline:jline-terminal:3.12.1
+     +--- net.sf.jopt-simple:jopt-simple:5.0.4
+     +--- org.spongepowered:mixin:0.8.5
+     +--- org.openjdk.nashorn:nashorn-core:15.3 (*)
+     +--- com.google.guava:guava:31.0.1-jre (*)
+     +--- com.google.code.gson:gson:2.8.8
+     +--- cpw.mods:bootstraplauncher:1.0.0
+     |    \--- cpw.mods:securejarhandler:1.0.1 -> 1.0.3 (*)
+     +--- net.minecraftforge:fmlcore:1.18.1-39.0.85
+     |    +--- net.minecraftforge:fmlloader:1.18.1-39.0.85
+     |    |    +--- net.sf.jopt-simple:jopt-simple:5.0.4
+     |    |    +--- cpw.mods:securejarhandler:1.0.1 -> 1.0.3 (*)
+     |    |    +--- org.apache.logging.log4j:log4j-core:2.14.1 -> 2.17.1 (*)
+     |    |    +--- net.minecraftforge:accesstransformers:8.0.4 (*)
+     |    |    +--- net.minecrell:terminalconsoleappender:1.2.0 (*)
+     |    |    +--- org.ow2.asm:asm:9.2
+     |    |    +--- org.ow2.asm:asm-tree:9.2 (*)
+     |    |    +--- org.ow2.asm:asm-commons:9.2 (*)
+     |    |    +--- net.minecraftforge:forgespi:4.0.+ -> 4.0.11 (*)
+     |    |    +--- org.apache.logging.log4j:log4j-api:2.14.1 -> 2.17.1
+     |    |    +--- com.google.guava:guava:21.0 -> 31.0.1-jre (*)
+     |    |    +--- com.google.code.gson:gson:2.8.0 -> 2.8.8
+     |    |    +--- org.apache.maven:maven-artifact:3.8.1 (*)
+     |    |    +--- org.apache.commons:commons-lang3:3.8.1 -> 3.12.0
+     |    |    +--- com.electronwill.night-config:core:3.6.3 -> 3.6.4
+     |    |    +--- com.electronwill.night-config:toml:3.6.3 -> 3.6.4 (*)
+     |    |    +--- cpw.mods:modlauncher:9.0.+ -> 9.1.0 (*)
+     |    |    \--- net.minecraftforge:coremods:5.0.+ -> 5.0.2 (*)
+     |    +--- commons-io:commons-io:2.5 -> 2.11.0
+     |    \--- net.minecraftforge:eventbus:5.0.+ -> 5.0.7 (*)
+     +--- net.minecraftforge:fmlloader:1.18.1-39.0.85 (*)
+     +--- net.minecraftforge:javafmllanguage:1.18.1-39.0.85
+     |    +--- net.minecraftforge:fmlloader:1.18.1-39.0.85 (*)
+     |    \--- net.minecraftforge:fmlcore:1.18.1-39.0.85 (*)
+     \--- net.minecraftforge:mclanguage:1.18.1-39.0.85
+          +--- net.minecraftforge:fmlloader:1.18.1-39.0.85 (*)
+          \--- net.minecraftforge:fmlcore:1.18.1-39.0.85 (*)
+
+modules_userdev_resolver
++--- cpw.mods:bootstraplauncher:1.0.0
+|    \--- cpw.mods:securejarhandler:1.0.1
+|         +--- org.ow2.asm:asm:9.1 -> 9.2
+|         +--- org.ow2.asm:asm-tree:9.1 -> 9.2
+|         |    \--- org.ow2.asm:asm:9.2
+|         \--- org.ow2.asm:asm-commons:9.1 -> 9.2
+|              +--- org.ow2.asm:asm:9.2
+|              +--- org.ow2.asm:asm-tree:9.2 (*)
+|              \--- org.ow2.asm:asm-analysis:9.2
+|                   \--- org.ow2.asm:asm-tree:9.2 (*)
++--- cpw.mods:securejarhandler:1.0.1 (*)
++--- org.ow2.asm:asm-commons:9.2 (*)
++--- org.ow2.asm:asm-util:9.2
+|    +--- org.ow2.asm:asm:9.2
+|    +--- org.ow2.asm:asm-tree:9.2 (*)
+|    \--- org.ow2.asm:asm-analysis:9.2 (*)
++--- org.ow2.asm:asm-analysis:9.2 (*)
++--- org.ow2.asm:asm-tree:9.2 (*)
+\--- org.ow2.asm:asm:9.2
+
+runtimeClasspath - Runtime classpath of source set 'main'.
++--- curse.maven:the-one-probe-245211:{strictly 3606616_mapped_parchment_2022.02.13-1.18.1} -> 3606616_mapped_parchment_2022.02.13-1.18.1
++--- net.minecraftforge:forge:1.18.1-39.0.85_mapped_parchment_2022.02.13-1.18.1
+|    +--- net.minecraft:client:1.18.1
+|    |    +--- com.mojang:blocklist:1.0.6
+|    |    +--- com.mojang:patchy:2.1.6
+|    |    +--- com.github.oshi:oshi-core:5.8.2
+|    |    |    +--- net.java.dev.jna:jna:5.9.0
+|    |    |    +--- net.java.dev.jna:jna-platform:5.9.0
+|    |    |    |    \--- net.java.dev.jna:jna:5.9.0
+|    |    |    \--- org.slf4j:slf4j-api:1.7.32 -> 1.8.0-beta4
+|    |    +--- net.java.dev.jna:jna:5.9.0
+|    |    +--- net.java.dev.jna:jna-platform:5.9.0 (*)
+|    |    +--- org.slf4j:slf4j-api:1.8.0-beta4
+|    |    +--- org.apache.logging.log4j:log4j-slf4j18-impl:2.14.1 -> 2.15.0
+|    |    |    +--- org.slf4j:slf4j-api:1.8.0-beta4
+|    |    |    +--- org.apache.logging.log4j:log4j-api:2.15.0 -> 2.17.1
+|    |    |    \--- org.apache.logging.log4j:log4j-core:2.15.0 -> 2.17.1
+|    |    |         \--- org.apache.logging.log4j:log4j-api:2.17.1
+|    |    +--- com.ibm.icu:icu4j:69.1
+|    |    +--- com.mojang:javabridge:1.2.24
+|    |    +--- net.sf.jopt-simple:jopt-simple:5.0.4
+|    |    +--- io.netty:netty-all:4.1.68.Final
+|    |    +--- com.google.guava:failureaccess:1.0.1
+|    |    +--- com.google.guava:guava:31.0.1-jre
+|    |    |    +--- com.google.guava:failureaccess:1.0.1
+|    |    |    +--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
+|    |    |    +--- com.google.code.findbugs:jsr305:3.0.2
+|    |    |    +--- org.checkerframework:checker-qual:3.12.0
+|    |    |    +--- com.google.errorprone:error_prone_annotations:2.7.1
+|    |    |    \--- com.google.j2objc:j2objc-annotations:1.3
+|    |    +--- org.apache.commons:commons-lang3:3.12.0
+|    |    +--- commons-io:commons-io:2.11.0
+|    |    +--- commons-codec:commons-codec:1.15
+|    |    +--- com.mojang:brigadier:1.0.18
+|    |    +--- com.mojang:datafixerupper:4.0.26
+|    |    +--- com.google.code.gson:gson:2.8.8
+|    |    +--- com.mojang:authlib:3.2.38
+|    |    +--- org.apache.commons:commons-compress:1.21
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.13
+|    |    |    +--- org.apache.httpcomponents:httpcore:4.4.13 -> 4.4.14
+|    |    |    +--- commons-logging:commons-logging:1.2
+|    |    |    \--- commons-codec:commons-codec:1.11 -> 1.15
+|    |    +--- commons-logging:commons-logging:1.2
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.14
+|    |    +--- it.unimi.dsi:fastutil:8.5.6
+|    |    +--- org.apache.logging.log4j:log4j-api:2.14.1 -> 2.17.1
+|    |    +--- org.apache.logging.log4j:log4j-core:2.14.1 -> 2.17.1 (*)
+|    |    +--- org.lwjgl:lwjgl:3.2.1
+|    |    +--- org.lwjgl:lwjgl-jemalloc:3.2.1
+|    |    |    \--- org.lwjgl:lwjgl:3.2.1
+|    |    +--- org.lwjgl:lwjgl-openal:3.2.1
+|    |    |    \--- org.lwjgl:lwjgl:3.2.1
+|    |    +--- org.lwjgl:lwjgl-opengl:3.2.1
+|    |    |    \--- org.lwjgl:lwjgl:3.2.1
+|    |    +--- org.lwjgl:lwjgl-glfw:3.2.1
+|    |    |    \--- org.lwjgl:lwjgl:3.2.1
+|    |    +--- org.lwjgl:lwjgl-stb:3.2.1
+|    |    |    \--- org.lwjgl:lwjgl:3.2.1
+|    |    +--- org.lwjgl:lwjgl-tinyfd:3.2.1
+|    |    |    \--- org.lwjgl:lwjgl:3.2.1
+|    |    +--- com.mojang:text2speech:1.11.3
+|    |    +--- ca.weblite:java-objc-bridge:1.0.0
+|    |    |    \--- net.java.dev.jna:jna:4.1.0 -> 5.9.0
+|    |    +--- com.google.code.findbugs:jsr305:3.0.1 -> 3.0.2
+|    |    \--- org.jetbrains:annotations:23.0.0
+|    +--- com.google.code.findbugs:jsr305:3.0.1 -> 3.0.2
+|    +--- ca.weblite:java-objc-bridge:1.0.0 (*)
+|    +--- net.minecraftforge:mergetool:1.1.3
+|    |    +--- org.ow2.asm:asm:9.1 -> 9.2
+|    |    +--- org.ow2.asm:asm-tree:9.1 -> 9.2
+|    |    |    \--- org.ow2.asm:asm:9.2
+|    |    +--- org.ow2.asm:asm-util:9.1 -> 9.2
+|    |    |    +--- org.ow2.asm:asm:9.2
+|    |    |    +--- org.ow2.asm:asm-tree:9.2 (*)
+|    |    |    \--- org.ow2.asm:asm-analysis:9.2
+|    |    |         \--- org.ow2.asm:asm-tree:9.2 (*)
+|    |    +--- net.sf.jopt-simple:jopt-simple:5.0.4
+|    |    \--- net.minecraftforge:srgutils:0.4.3
+|    +--- org.jetbrains:annotations:23.0.0
+|    +--- net.minecraft:mappings_parchment:2022.02.13-1.18.1
+|    +--- cpw.mods:securejarhandler:1.0.1 -> 1.0.3
+|    |    +--- org.ow2.asm:asm:9.1 -> 9.2
+|    |    +--- org.ow2.asm:asm-tree:9.1 -> 9.2 (*)
+|    |    \--- org.ow2.asm:asm-commons:9.1 -> 9.2
+|    |         +--- org.ow2.asm:asm:9.2
+|    |         +--- org.ow2.asm:asm-tree:9.2 (*)
+|    |         \--- org.ow2.asm:asm-analysis:9.2 (*)
+|    +--- org.ow2.asm:asm:9.2
+|    +--- org.ow2.asm:asm-commons:9.2 (*)
+|    +--- org.ow2.asm:asm-tree:9.2 (*)
+|    +--- org.ow2.asm:asm-util:9.2 (*)
+|    +--- org.ow2.asm:asm-analysis:9.2 (*)
+|    +--- net.minecraftforge:accesstransformers:8.0.4
+|    |    +--- org.antlr:antlr4-runtime:4.9.1
+|    |    +--- net.sf.jopt-simple:jopt-simple:5.0.4
+|    |    +--- org.ow2.asm:asm:9.1 -> 9.2
+|    |    +--- org.ow2.asm:asm-commons:9.1 -> 9.2 (*)
+|    |    +--- org.ow2.asm:asm-tree:9.1 -> 9.2 (*)
+|    |    +--- org.apache.logging.log4j:log4j-api:2.11.+ -> 2.17.1
+|    |    +--- org.apache.logging.log4j:log4j-core:2.11.+ -> 2.17.1 (*)
+|    |    +--- cpw.mods:modlauncher:9.0.4 -> 9.1.0
+|    |    |    +--- net.sf.jopt-simple:jopt-simple:5.0.4
+|    |    |    +--- org.apache.logging.log4j:log4j-api:2.17.1
+|    |    |    +--- org.apache.logging.log4j:log4j-core:2.17.1 (*)
+|    |    |    +--- cpw.mods:securejarhandler:1.0.+ -> 1.0.3 (*)
+|    |    |    +--- org.ow2.asm:asm:9.2
+|    |    |    +--- org.ow2.asm:asm-tree:9.2 (*)
+|    |    |    \--- org.ow2.asm:asm-commons:9.2 (*)
+|    |    \--- org.antlr:antlr4:4.9.1
+|    |         +--- org.antlr:antlr4-runtime:4.9.1
+|    |         +--- org.antlr:antlr-runtime:3.5.2
+|    |         +--- org.antlr:ST4:4.3
+|    |         |    \--- org.antlr:antlr-runtime:3.5.2
+|    |         +--- org.abego.treelayout:org.abego.treelayout.core:1.0.3
+|    |         +--- org.glassfish:javax.json:1.0.4
+|    |         \--- com.ibm.icu:icu4j:61.1 -> 69.1
+|    +--- org.antlr:antlr4-runtime:4.9.1
+|    +--- net.minecraftforge:eventbus:5.0.3 -> 5.0.7
+|    |    +--- org.ow2.asm:asm:9.1 -> 9.2
+|    |    +--- org.ow2.asm:asm-commons:9.1 -> 9.2 (*)
+|    |    +--- org.ow2.asm:asm-tree:9.1 -> 9.2 (*)
+|    |    +--- org.apache.logging.log4j:log4j-api:2.14.1 -> 2.17.1
+|    |    +--- cpw.mods:modlauncher:9.0.+ -> 9.1.0 (*)
+|    |    \--- net.jodah:typetools:0.8.+ -> 0.8.3
+|    +--- net.minecraftforge:forgespi:4.0.10 -> 4.0.11
+|    |    +--- cpw.mods:modlauncher:9.0.7 -> 9.1.0 (*)
+|    |    +--- org.ow2.asm:asm:9.1 -> 9.2
+|    |    +--- org.ow2.asm:asm-commons:9.1 -> 9.2 (*)
+|    |    +--- org.ow2.asm:asm-tree:9.1 -> 9.2 (*)
+|    |    +--- org.apache.logging.log4j:log4j-api:2.14.1 -> 2.17.1
+|    |    +--- org.apache.maven:maven-artifact:3.8.1
+|    |    |    +--- org.codehaus.plexus:plexus-utils:3.2.1
+|    |    |    \--- org.apache.commons:commons-lang3:3.8.1 -> 3.12.0
+|    |    \--- cpw.mods:securejarhandler:0.9.52 -> 1.0.3 (*)
+|    +--- net.minecraftforge:coremods:5.0.1 -> 5.0.2
+|    |    +--- cpw.mods:modlauncher:9.0.+ -> 9.1.0 (*)
+|    |    +--- org.apache.logging.log4j:log4j-api:2.14.1 -> 2.17.1
+|    |    +--- org.ow2.asm:asm:9.1 -> 9.2
+|    |    +--- org.ow2.asm:asm-commons:9.1 -> 9.2 (*)
+|    |    +--- org.ow2.asm:asm-tree:9.1 -> 9.2 (*)
+|    |    +--- org.ow2.asm:asm-util:9.1 -> 9.2 (*)
+|    |    +--- net.minecraftforge:forgespi:4.0.+ -> 4.0.11 (*)
+|    |    \--- org.openjdk.nashorn:nashorn-core:15.1.1 -> 15.3
+|    |         +--- org.ow2.asm:asm:7.3.1 -> 9.2
+|    |         +--- org.ow2.asm:asm-commons:7.3.1 -> 9.2 (*)
+|    |         +--- org.ow2.asm:asm-tree:7.3.1 -> 9.2 (*)
+|    |         \--- org.ow2.asm:asm-util:7.3.1 -> 9.2 (*)
+|    +--- cpw.mods:modlauncher:9.1.0 (*)
+|    +--- net.minecraftforge:unsafe:0.2.0
+|    |    +--- org.apache.logging.log4j:log4j-api:2.11.+ -> 2.17.1
+|    |    \--- org.apache.logging.log4j:log4j-core:2.11.+ -> 2.17.1 (*)
+|    +--- com.electronwill.night-config:core:3.6.4
+|    +--- com.electronwill.night-config:toml:3.6.4
+|    |    \--- com.electronwill.night-config:core:3.6.4
+|    +--- org.apache.maven:maven-artifact:3.6.3 -> 3.8.1 (*)
+|    +--- org.apache.commons:commons-lang3:3.12.0
+|    +--- net.jodah:typetools:0.8.3
+|    +--- org.apache.logging.log4j:log4j-api:2.15.0 -> 2.17.1
+|    +--- org.apache.logging.log4j:log4j-core:2.15.0 -> 2.17.1 (*)
+|    +--- org.apache.logging.log4j:log4j-slf4j18-impl:2.15.0 (*)
+|    +--- net.minecrell:terminalconsoleappender:1.2.0
+|    |    +--- org.apache.logging.log4j:log4j-core:2.8.1 -> 2.17.1 (*)
+|    |    \--- org.jline:jline-reader:3.12.1
+|    |         \--- org.jline:jline-terminal:3.12.1
+|    +--- org.jline:jline-reader:3.12.1 (*)
+|    +--- org.jline:jline-terminal:3.12.1
+|    +--- net.sf.jopt-simple:jopt-simple:5.0.4
+|    +--- org.spongepowered:mixin:0.8.5
+|    +--- org.openjdk.nashorn:nashorn-core:15.3 (*)
+|    +--- com.google.guava:guava:31.0.1-jre (*)
+|    +--- com.google.code.gson:gson:2.8.8
+|    +--- cpw.mods:bootstraplauncher:1.0.0
+|    |    \--- cpw.mods:securejarhandler:1.0.1 -> 1.0.3 (*)
+|    +--- net.minecraftforge:fmlcore:1.18.1-39.0.85
+|    |    +--- net.minecraftforge:fmlloader:1.18.1-39.0.85
+|    |    |    +--- net.sf.jopt-simple:jopt-simple:5.0.4
+|    |    |    +--- cpw.mods:securejarhandler:1.0.1 -> 1.0.3 (*)
+|    |    |    +--- org.apache.logging.log4j:log4j-core:2.14.1 -> 2.17.1 (*)
+|    |    |    +--- net.minecraftforge:accesstransformers:8.0.4 (*)
+|    |    |    +--- net.minecrell:terminalconsoleappender:1.2.0 (*)
+|    |    |    +--- org.ow2.asm:asm:9.2
+|    |    |    +--- org.ow2.asm:asm-tree:9.2 (*)
+|    |    |    +--- org.ow2.asm:asm-commons:9.2 (*)
+|    |    |    +--- net.minecraftforge:forgespi:4.0.+ -> 4.0.11 (*)
+|    |    |    +--- org.apache.logging.log4j:log4j-api:2.14.1 -> 2.17.1
+|    |    |    +--- com.google.guava:guava:21.0 -> 31.0.1-jre (*)
+|    |    |    +--- com.google.code.gson:gson:2.8.0 -> 2.8.8
+|    |    |    +--- org.apache.maven:maven-artifact:3.8.1 (*)
+|    |    |    +--- org.apache.commons:commons-lang3:3.8.1 -> 3.12.0
+|    |    |    +--- com.electronwill.night-config:core:3.6.3 -> 3.6.4
+|    |    |    +--- com.electronwill.night-config:toml:3.6.3 -> 3.6.4 (*)
+|    |    |    +--- cpw.mods:modlauncher:9.0.+ -> 9.1.0 (*)
+|    |    |    \--- net.minecraftforge:coremods:5.0.+ -> 5.0.2 (*)
+|    |    +--- commons-io:commons-io:2.5 -> 2.11.0
+|    |    \--- net.minecraftforge:eventbus:5.0.+ -> 5.0.7 (*)
+|    +--- net.minecraftforge:fmlloader:1.18.1-39.0.85 (*)
+|    +--- net.minecraftforge:javafmllanguage:1.18.1-39.0.85
+|    |    +--- net.minecraftforge:fmlloader:1.18.1-39.0.85 (*)
+|    |    \--- net.minecraftforge:fmlcore:1.18.1-39.0.85 (*)
+|    \--- net.minecraftforge:mclanguage:1.18.1-39.0.85
+|         +--- net.minecraftforge:fmlloader:1.18.1-39.0.85 (*)
+|         \--- net.minecraftforge:fmlcore:1.18.1-39.0.85 (*)
+\--- mezz.jei:jei-1.18.1:{strictly 9.4.1.106_mapped_parchment_2022.02.13-1.18.1} -> 9.4.1.106_mapped_parchment_2022.02.13-1.18.1
+
+runtimeElements - Elements of runtime for main. (n)
+No dependencies
+
+runtimeOnly - Runtime only dependencies for source set 'main'. (n)
+\--- mezz.jei:jei-1.18.1:9.4.1.106_mapped_parchment_2022.02.13-1.18.1 (n)
+
+testAnnotationProcessor - Annotation processors and their dependencies for source set 'test'.
+No dependencies
+
+testCompileClasspath - Compile classpath for source set 'test'.
++--- curse.maven:the-one-probe-245211:{strictly 3606616_mapped_parchment_2022.02.13-1.18.1} -> 3606616_mapped_parchment_2022.02.13-1.18.1
+\--- net.minecraftforge:forge:1.18.1-39.0.85_mapped_parchment_2022.02.13-1.18.1
+     +--- net.minecraft:client:1.18.1
+     |    +--- com.mojang:blocklist:1.0.6
+     |    +--- com.mojang:patchy:2.1.6
+     |    +--- com.github.oshi:oshi-core:5.8.2
+     |    |    +--- net.java.dev.jna:jna:5.9.0
+     |    |    +--- net.java.dev.jna:jna-platform:5.9.0
+     |    |    |    \--- net.java.dev.jna:jna:5.9.0
+     |    |    \--- org.slf4j:slf4j-api:1.7.32 -> 1.8.0-beta4
+     |    +--- net.java.dev.jna:jna:5.9.0
+     |    +--- net.java.dev.jna:jna-platform:5.9.0 (*)
+     |    +--- org.slf4j:slf4j-api:1.8.0-beta4
+     |    +--- org.apache.logging.log4j:log4j-slf4j18-impl:2.14.1 -> 2.15.0
+     |    |    +--- org.slf4j:slf4j-api:1.8.0-beta4
+     |    |    \--- org.apache.logging.log4j:log4j-api:2.15.0
+     |    +--- com.ibm.icu:icu4j:69.1
+     |    +--- com.mojang:javabridge:1.2.24
+     |    +--- net.sf.jopt-simple:jopt-simple:5.0.4
+     |    +--- io.netty:netty-all:4.1.68.Final
+     |    +--- com.google.guava:failureaccess:1.0.1
+     |    +--- com.google.guava:guava:31.0.1-jre
+     |    |    +--- com.google.guava:failureaccess:1.0.1
+     |    |    +--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
+     |    |    +--- com.google.code.findbugs:jsr305:3.0.2
+     |    |    +--- org.checkerframework:checker-qual:3.12.0
+     |    |    +--- com.google.errorprone:error_prone_annotations:2.7.1
+     |    |    \--- com.google.j2objc:j2objc-annotations:1.3
+     |    +--- org.apache.commons:commons-lang3:3.12.0
+     |    +--- commons-io:commons-io:2.11.0
+     |    +--- commons-codec:commons-codec:1.15
+     |    +--- com.mojang:brigadier:1.0.18
+     |    +--- com.mojang:datafixerupper:4.0.26
+     |    +--- com.google.code.gson:gson:2.8.8
+     |    +--- com.mojang:authlib:3.2.38
+     |    +--- org.apache.commons:commons-compress:1.21
+     |    +--- org.apache.httpcomponents:httpclient:4.5.13
+     |    |    +--- org.apache.httpcomponents:httpcore:4.4.13 -> 4.4.14
+     |    |    +--- commons-logging:commons-logging:1.2
+     |    |    \--- commons-codec:commons-codec:1.11 -> 1.15
+     |    +--- commons-logging:commons-logging:1.2
+     |    +--- org.apache.httpcomponents:httpcore:4.4.14
+     |    +--- it.unimi.dsi:fastutil:8.5.6
+     |    +--- org.apache.logging.log4j:log4j-api:2.14.1 -> 2.15.0
+     |    +--- org.apache.logging.log4j:log4j-core:2.14.1 -> 2.15.0
+     |    |    \--- org.apache.logging.log4j:log4j-api:2.15.0
+     |    +--- org.lwjgl:lwjgl:3.2.1
+     |    +--- org.lwjgl:lwjgl-jemalloc:3.2.1
+     |    |    \--- org.lwjgl:lwjgl:3.2.1
+     |    +--- org.lwjgl:lwjgl-openal:3.2.1
+     |    |    \--- org.lwjgl:lwjgl:3.2.1
+     |    +--- org.lwjgl:lwjgl-opengl:3.2.1
+     |    |    \--- org.lwjgl:lwjgl:3.2.1
+     |    +--- org.lwjgl:lwjgl-glfw:3.2.1
+     |    |    \--- org.lwjgl:lwjgl:3.2.1
+     |    +--- org.lwjgl:lwjgl-stb:3.2.1
+     |    |    \--- org.lwjgl:lwjgl:3.2.1
+     |    +--- org.lwjgl:lwjgl-tinyfd:3.2.1
+     |    |    \--- org.lwjgl:lwjgl:3.2.1
+     |    +--- com.mojang:text2speech:1.11.3
+     |    +--- ca.weblite:java-objc-bridge:1.0.0
+     |    |    \--- net.java.dev.jna:jna:4.1.0 -> 5.9.0
+     |    +--- com.google.code.findbugs:jsr305:3.0.1 -> 3.0.2
+     |    \--- org.jetbrains:annotations:23.0.0
+     +--- com.google.code.findbugs:jsr305:3.0.1 -> 3.0.2
+     +--- ca.weblite:java-objc-bridge:1.0.0 (*)
+     +--- net.minecraftforge:mergetool:1.1.3
+     +--- org.jetbrains:annotations:23.0.0
+     +--- net.minecraft:mappings_parchment:2022.02.13-1.18.1
+     +--- cpw.mods:securejarhandler:1.0.1
+     |    +--- org.ow2.asm:asm:9.1 -> 9.2
+     |    +--- org.ow2.asm:asm-tree:9.1 -> 9.2
+     |    |    \--- org.ow2.asm:asm:9.2
+     |    \--- org.ow2.asm:asm-commons:9.1 -> 9.2
+     |         +--- org.ow2.asm:asm:9.2
+     |         +--- org.ow2.asm:asm-tree:9.2 (*)
+     |         \--- org.ow2.asm:asm-analysis:9.2
+     |              \--- org.ow2.asm:asm-tree:9.2 (*)
+     +--- org.ow2.asm:asm:9.2
+     +--- org.ow2.asm:asm-commons:9.2 (*)
+     +--- org.ow2.asm:asm-tree:9.2 (*)
+     +--- org.ow2.asm:asm-util:9.2
+     |    +--- org.ow2.asm:asm:9.2
+     |    +--- org.ow2.asm:asm-tree:9.2 (*)
+     |    \--- org.ow2.asm:asm-analysis:9.2 (*)
+     +--- org.ow2.asm:asm-analysis:9.2 (*)
+     +--- net.minecraftforge:accesstransformers:8.0.4
+     |    \--- org.antlr:antlr4:4.9.1
+     |         +--- org.antlr:antlr4-runtime:4.9.1
+     |         +--- org.antlr:antlr-runtime:3.5.2
+     |         +--- org.antlr:ST4:4.3
+     |         |    \--- org.antlr:antlr-runtime:3.5.2
+     |         +--- org.abego.treelayout:org.abego.treelayout.core:1.0.3
+     |         +--- org.glassfish:javax.json:1.0.4
+     |         \--- com.ibm.icu:icu4j:61.1 -> 69.1
+     +--- org.antlr:antlr4-runtime:4.9.1
+     +--- net.minecraftforge:eventbus:5.0.3 -> 5.0.7
+     |    \--- net.jodah:typetools:0.8.+ -> 0.8.3
+     +--- net.minecraftforge:forgespi:4.0.10 -> 4.0.11
+     +--- net.minecraftforge:coremods:5.0.1 -> 5.0.2
+     +--- cpw.mods:modlauncher:9.1.0
+     |    +--- org.ow2.asm:asm:9.2
+     |    +--- org.ow2.asm:asm-tree:9.2 (*)
+     |    \--- org.ow2.asm:asm-commons:9.2 (*)
+     +--- net.minecraftforge:unsafe:0.2.0
+     +--- com.electronwill.night-config:core:3.6.4
+     +--- com.electronwill.night-config:toml:3.6.4
+     |    \--- com.electronwill.night-config:core:3.6.4
+     +--- org.apache.maven:maven-artifact:3.6.3 -> 3.8.1
+     |    +--- org.codehaus.plexus:plexus-utils:3.2.1
+     |    \--- org.apache.commons:commons-lang3:3.8.1 -> 3.12.0
+     +--- org.apache.commons:commons-lang3:3.12.0
+     +--- net.jodah:typetools:0.8.3
+     +--- org.apache.logging.log4j:log4j-api:2.15.0
+     +--- org.apache.logging.log4j:log4j-core:2.15.0 (*)
+     +--- org.apache.logging.log4j:log4j-slf4j18-impl:2.15.0 (*)
+     +--- net.minecrell:terminalconsoleappender:1.2.0
+     |    +--- org.apache.logging.log4j:log4j-core:2.8.1 -> 2.15.0 (*)
+     |    \--- org.jline:jline-reader:3.12.1
+     |         \--- org.jline:jline-terminal:3.12.1
+     +--- org.jline:jline-reader:3.12.1 (*)
+     +--- org.jline:jline-terminal:3.12.1
+     +--- net.sf.jopt-simple:jopt-simple:5.0.4
+     +--- org.spongepowered:mixin:0.8.5
+     +--- org.openjdk.nashorn:nashorn-core:15.3
+     |    +--- org.ow2.asm:asm:7.3.1 -> 9.2
+     |    +--- org.ow2.asm:asm-commons:7.3.1 -> 9.2 (*)
+     |    +--- org.ow2.asm:asm-tree:7.3.1 -> 9.2 (*)
+     |    \--- org.ow2.asm:asm-util:7.3.1 -> 9.2 (*)
+     +--- com.google.guava:guava:31.0.1-jre (*)
+     +--- com.google.code.gson:gson:2.8.8
+     +--- cpw.mods:bootstraplauncher:1.0.0
+     +--- net.minecraftforge:fmlcore:1.18.1-39.0.85
+     |    \--- net.minecraftforge:eventbus:5.0.+ -> 5.0.7 (*)
+     +--- net.minecraftforge:fmlloader:1.18.1-39.0.85
+     |    +--- org.ow2.asm:asm:9.2
+     |    +--- org.ow2.asm:asm-tree:9.2 (*)
+     |    +--- org.ow2.asm:asm-commons:9.2 (*)
+     |    +--- net.minecraftforge:forgespi:4.0.+ -> 4.0.11
+     |    +--- org.apache.logging.log4j:log4j-api:2.14.1 -> 2.15.0
+     |    +--- com.google.guava:guava:21.0 -> 31.0.1-jre (*)
+     |    +--- com.google.code.gson:gson:2.8.0 -> 2.8.8
+     |    +--- org.apache.maven:maven-artifact:3.8.1 (*)
+     |    +--- org.apache.commons:commons-lang3:3.8.1 -> 3.12.0
+     |    +--- com.electronwill.night-config:core:3.6.3 -> 3.6.4
+     |    +--- com.electronwill.night-config:toml:3.6.3 -> 3.6.4 (*)
+     |    +--- cpw.mods:modlauncher:9.0.+ -> 9.1.0 (*)
+     |    \--- net.minecraftforge:coremods:5.0.+ -> 5.0.2
+     +--- net.minecraftforge:javafmllanguage:1.18.1-39.0.85
+     \--- net.minecraftforge:mclanguage:1.18.1-39.0.85
+
+testCompileOnly - Compile only dependencies for source set 'test'. (n)
+No dependencies
+
+testImplementation - Implementation only dependencies for source set 'test'. (n)
+No dependencies
+
+testRuntimeClasspath - Runtime classpath of source set 'test'.
++--- curse.maven:the-one-probe-245211:{strictly 3606616_mapped_parchment_2022.02.13-1.18.1} -> 3606616_mapped_parchment_2022.02.13-1.18.1
++--- net.minecraftforge:forge:1.18.1-39.0.85_mapped_parchment_2022.02.13-1.18.1
+|    +--- net.minecraft:client:1.18.1
+|    |    +--- com.mojang:blocklist:1.0.6
+|    |    +--- com.mojang:patchy:2.1.6
+|    |    +--- com.github.oshi:oshi-core:5.8.2
+|    |    |    +--- net.java.dev.jna:jna:5.9.0
+|    |    |    +--- net.java.dev.jna:jna-platform:5.9.0
+|    |    |    |    \--- net.java.dev.jna:jna:5.9.0
+|    |    |    \--- org.slf4j:slf4j-api:1.7.32 -> 1.8.0-beta4
+|    |    +--- net.java.dev.jna:jna:5.9.0
+|    |    +--- net.java.dev.jna:jna-platform:5.9.0 (*)
+|    |    +--- org.slf4j:slf4j-api:1.8.0-beta4
+|    |    +--- org.apache.logging.log4j:log4j-slf4j18-impl:2.14.1 -> 2.15.0
+|    |    |    +--- org.slf4j:slf4j-api:1.8.0-beta4
+|    |    |    +--- org.apache.logging.log4j:log4j-api:2.15.0 -> 2.17.1
+|    |    |    \--- org.apache.logging.log4j:log4j-core:2.15.0 -> 2.17.1
+|    |    |         \--- org.apache.logging.log4j:log4j-api:2.17.1
+|    |    +--- com.ibm.icu:icu4j:69.1
+|    |    +--- com.mojang:javabridge:1.2.24
+|    |    +--- net.sf.jopt-simple:jopt-simple:5.0.4
+|    |    +--- io.netty:netty-all:4.1.68.Final
+|    |    +--- com.google.guava:failureaccess:1.0.1
+|    |    +--- com.google.guava:guava:31.0.1-jre
+|    |    |    +--- com.google.guava:failureaccess:1.0.1
+|    |    |    +--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
+|    |    |    +--- com.google.code.findbugs:jsr305:3.0.2
+|    |    |    +--- org.checkerframework:checker-qual:3.12.0
+|    |    |    +--- com.google.errorprone:error_prone_annotations:2.7.1
+|    |    |    \--- com.google.j2objc:j2objc-annotations:1.3
+|    |    +--- org.apache.commons:commons-lang3:3.12.0
+|    |    +--- commons-io:commons-io:2.11.0
+|    |    +--- commons-codec:commons-codec:1.15
+|    |    +--- com.mojang:brigadier:1.0.18
+|    |    +--- com.mojang:datafixerupper:4.0.26
+|    |    +--- com.google.code.gson:gson:2.8.8
+|    |    +--- com.mojang:authlib:3.2.38
+|    |    +--- org.apache.commons:commons-compress:1.21
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.13
+|    |    |    +--- org.apache.httpcomponents:httpcore:4.4.13 -> 4.4.14
+|    |    |    +--- commons-logging:commons-logging:1.2
+|    |    |    \--- commons-codec:commons-codec:1.11 -> 1.15
+|    |    +--- commons-logging:commons-logging:1.2
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.14
+|    |    +--- it.unimi.dsi:fastutil:8.5.6
+|    |    +--- org.apache.logging.log4j:log4j-api:2.14.1 -> 2.17.1
+|    |    +--- org.apache.logging.log4j:log4j-core:2.14.1 -> 2.17.1 (*)
+|    |    +--- org.lwjgl:lwjgl:3.2.1
+|    |    +--- org.lwjgl:lwjgl-jemalloc:3.2.1
+|    |    |    \--- org.lwjgl:lwjgl:3.2.1
+|    |    +--- org.lwjgl:lwjgl-openal:3.2.1
+|    |    |    \--- org.lwjgl:lwjgl:3.2.1
+|    |    +--- org.lwjgl:lwjgl-opengl:3.2.1
+|    |    |    \--- org.lwjgl:lwjgl:3.2.1
+|    |    +--- org.lwjgl:lwjgl-glfw:3.2.1
+|    |    |    \--- org.lwjgl:lwjgl:3.2.1
+|    |    +--- org.lwjgl:lwjgl-stb:3.2.1
+|    |    |    \--- org.lwjgl:lwjgl:3.2.1
+|    |    +--- org.lwjgl:lwjgl-tinyfd:3.2.1
+|    |    |    \--- org.lwjgl:lwjgl:3.2.1
+|    |    +--- com.mojang:text2speech:1.11.3
+|    |    +--- ca.weblite:java-objc-bridge:1.0.0
+|    |    |    \--- net.java.dev.jna:jna:4.1.0 -> 5.9.0
+|    |    +--- com.google.code.findbugs:jsr305:3.0.1 -> 3.0.2
+|    |    \--- org.jetbrains:annotations:23.0.0
+|    +--- com.google.code.findbugs:jsr305:3.0.1 -> 3.0.2
+|    +--- ca.weblite:java-objc-bridge:1.0.0 (*)
+|    +--- net.minecraftforge:mergetool:1.1.3
+|    |    +--- org.ow2.asm:asm:9.1 -> 9.2
+|    |    +--- org.ow2.asm:asm-tree:9.1 -> 9.2
+|    |    |    \--- org.ow2.asm:asm:9.2
+|    |    +--- org.ow2.asm:asm-util:9.1 -> 9.2
+|    |    |    +--- org.ow2.asm:asm:9.2
+|    |    |    +--- org.ow2.asm:asm-tree:9.2 (*)
+|    |    |    \--- org.ow2.asm:asm-analysis:9.2
+|    |    |         \--- org.ow2.asm:asm-tree:9.2 (*)
+|    |    +--- net.sf.jopt-simple:jopt-simple:5.0.4
+|    |    \--- net.minecraftforge:srgutils:0.4.3
+|    +--- org.jetbrains:annotations:23.0.0
+|    +--- net.minecraft:mappings_parchment:2022.02.13-1.18.1
+|    +--- cpw.mods:securejarhandler:1.0.1 -> 1.0.3
+|    |    +--- org.ow2.asm:asm:9.1 -> 9.2
+|    |    +--- org.ow2.asm:asm-tree:9.1 -> 9.2 (*)
+|    |    \--- org.ow2.asm:asm-commons:9.1 -> 9.2
+|    |         +--- org.ow2.asm:asm:9.2
+|    |         +--- org.ow2.asm:asm-tree:9.2 (*)
+|    |         \--- org.ow2.asm:asm-analysis:9.2 (*)
+|    +--- org.ow2.asm:asm:9.2
+|    +--- org.ow2.asm:asm-commons:9.2 (*)
+|    +--- org.ow2.asm:asm-tree:9.2 (*)
+|    +--- org.ow2.asm:asm-util:9.2 (*)
+|    +--- org.ow2.asm:asm-analysis:9.2 (*)
+|    +--- net.minecraftforge:accesstransformers:8.0.4
+|    |    +--- org.antlr:antlr4-runtime:4.9.1
+|    |    +--- net.sf.jopt-simple:jopt-simple:5.0.4
+|    |    +--- org.ow2.asm:asm:9.1 -> 9.2
+|    |    +--- org.ow2.asm:asm-commons:9.1 -> 9.2 (*)
+|    |    +--- org.ow2.asm:asm-tree:9.1 -> 9.2 (*)
+|    |    +--- org.apache.logging.log4j:log4j-api:2.11.+ -> 2.17.1
+|    |    +--- org.apache.logging.log4j:log4j-core:2.11.+ -> 2.17.1 (*)
+|    |    +--- cpw.mods:modlauncher:9.0.4 -> 9.1.0
+|    |    |    +--- net.sf.jopt-simple:jopt-simple:5.0.4
+|    |    |    +--- org.apache.logging.log4j:log4j-api:2.17.1
+|    |    |    +--- org.apache.logging.log4j:log4j-core:2.17.1 (*)
+|    |    |    +--- cpw.mods:securejarhandler:1.0.+ -> 1.0.3 (*)
+|    |    |    +--- org.ow2.asm:asm:9.2
+|    |    |    +--- org.ow2.asm:asm-tree:9.2 (*)
+|    |    |    \--- org.ow2.asm:asm-commons:9.2 (*)
+|    |    \--- org.antlr:antlr4:4.9.1
+|    |         +--- org.antlr:antlr4-runtime:4.9.1
+|    |         +--- org.antlr:antlr-runtime:3.5.2
+|    |         +--- org.antlr:ST4:4.3
+|    |         |    \--- org.antlr:antlr-runtime:3.5.2
+|    |         +--- org.abego.treelayout:org.abego.treelayout.core:1.0.3
+|    |         +--- org.glassfish:javax.json:1.0.4
+|    |         \--- com.ibm.icu:icu4j:61.1 -> 69.1
+|    +--- org.antlr:antlr4-runtime:4.9.1
+|    +--- net.minecraftforge:eventbus:5.0.3 -> 5.0.7
+|    |    +--- org.ow2.asm:asm:9.1 -> 9.2
+|    |    +--- org.ow2.asm:asm-commons:9.1 -> 9.2 (*)
+|    |    +--- org.ow2.asm:asm-tree:9.1 -> 9.2 (*)
+|    |    +--- org.apache.logging.log4j:log4j-api:2.14.1 -> 2.17.1
+|    |    +--- cpw.mods:modlauncher:9.0.+ -> 9.1.0 (*)
+|    |    \--- net.jodah:typetools:0.8.+ -> 0.8.3
+|    +--- net.minecraftforge:forgespi:4.0.10 -> 4.0.11
+|    |    +--- cpw.mods:modlauncher:9.0.7 -> 9.1.0 (*)
+|    |    +--- org.ow2.asm:asm:9.1 -> 9.2
+|    |    +--- org.ow2.asm:asm-commons:9.1 -> 9.2 (*)
+|    |    +--- org.ow2.asm:asm-tree:9.1 -> 9.2 (*)
+|    |    +--- org.apache.logging.log4j:log4j-api:2.14.1 -> 2.17.1
+|    |    +--- org.apache.maven:maven-artifact:3.8.1
+|    |    |    +--- org.codehaus.plexus:plexus-utils:3.2.1
+|    |    |    \--- org.apache.commons:commons-lang3:3.8.1 -> 3.12.0
+|    |    \--- cpw.mods:securejarhandler:0.9.52 -> 1.0.3 (*)
+|    +--- net.minecraftforge:coremods:5.0.1 -> 5.0.2
+|    |    +--- cpw.mods:modlauncher:9.0.+ -> 9.1.0 (*)
+|    |    +--- org.apache.logging.log4j:log4j-api:2.14.1 -> 2.17.1
+|    |    +--- org.ow2.asm:asm:9.1 -> 9.2
+|    |    +--- org.ow2.asm:asm-commons:9.1 -> 9.2 (*)
+|    |    +--- org.ow2.asm:asm-tree:9.1 -> 9.2 (*)
+|    |    +--- org.ow2.asm:asm-util:9.1 -> 9.2 (*)
+|    |    +--- net.minecraftforge:forgespi:4.0.+ -> 4.0.11 (*)
+|    |    \--- org.openjdk.nashorn:nashorn-core:15.1.1 -> 15.3
+|    |         +--- org.ow2.asm:asm:7.3.1 -> 9.2
+|    |         +--- org.ow2.asm:asm-commons:7.3.1 -> 9.2 (*)
+|    |         +--- org.ow2.asm:asm-tree:7.3.1 -> 9.2 (*)
+|    |         \--- org.ow2.asm:asm-util:7.3.1 -> 9.2 (*)
+|    +--- cpw.mods:modlauncher:9.1.0 (*)
+|    +--- net.minecraftforge:unsafe:0.2.0
+|    |    +--- org.apache.logging.log4j:log4j-api:2.11.+ -> 2.17.1
+|    |    \--- org.apache.logging.log4j:log4j-core:2.11.+ -> 2.17.1 (*)
+|    +--- com.electronwill.night-config:core:3.6.4
+|    +--- com.electronwill.night-config:toml:3.6.4
+|    |    \--- com.electronwill.night-config:core:3.6.4
+|    +--- org.apache.maven:maven-artifact:3.6.3 -> 3.8.1 (*)
+|    +--- org.apache.commons:commons-lang3:3.12.0
+|    +--- net.jodah:typetools:0.8.3
+|    +--- org.apache.logging.log4j:log4j-api:2.15.0 -> 2.17.1
+|    +--- org.apache.logging.log4j:log4j-core:2.15.0 -> 2.17.1 (*)
+|    +--- org.apache.logging.log4j:log4j-slf4j18-impl:2.15.0 (*)
+|    +--- net.minecrell:terminalconsoleappender:1.2.0
+|    |    +--- org.apache.logging.log4j:log4j-core:2.8.1 -> 2.17.1 (*)
+|    |    \--- org.jline:jline-reader:3.12.1
+|    |         \--- org.jline:jline-terminal:3.12.1
+|    +--- org.jline:jline-reader:3.12.1 (*)
+|    +--- org.jline:jline-terminal:3.12.1
+|    +--- net.sf.jopt-simple:jopt-simple:5.0.4
+|    +--- org.spongepowered:mixin:0.8.5
+|    +--- org.openjdk.nashorn:nashorn-core:15.3 (*)
+|    +--- com.google.guava:guava:31.0.1-jre (*)
+|    +--- com.google.code.gson:gson:2.8.8
+|    +--- cpw.mods:bootstraplauncher:1.0.0
+|    |    \--- cpw.mods:securejarhandler:1.0.1 -> 1.0.3 (*)
+|    +--- net.minecraftforge:fmlcore:1.18.1-39.0.85
+|    |    +--- net.minecraftforge:fmlloader:1.18.1-39.0.85
+|    |    |    +--- net.sf.jopt-simple:jopt-simple:5.0.4
+|    |    |    +--- cpw.mods:securejarhandler:1.0.1 -> 1.0.3 (*)
+|    |    |    +--- org.apache.logging.log4j:log4j-core:2.14.1 -> 2.17.1 (*)
+|    |    |    +--- net.minecraftforge:accesstransformers:8.0.4 (*)
+|    |    |    +--- net.minecrell:terminalconsoleappender:1.2.0 (*)
+|    |    |    +--- org.ow2.asm:asm:9.2
+|    |    |    +--- org.ow2.asm:asm-tree:9.2 (*)
+|    |    |    +--- org.ow2.asm:asm-commons:9.2 (*)
+|    |    |    +--- net.minecraftforge:forgespi:4.0.+ -> 4.0.11 (*)
+|    |    |    +--- org.apache.logging.log4j:log4j-api:2.14.1 -> 2.17.1
+|    |    |    +--- com.google.guava:guava:21.0 -> 31.0.1-jre (*)
+|    |    |    +--- com.google.code.gson:gson:2.8.0 -> 2.8.8
+|    |    |    +--- org.apache.maven:maven-artifact:3.8.1 (*)
+|    |    |    +--- org.apache.commons:commons-lang3:3.8.1 -> 3.12.0
+|    |    |    +--- com.electronwill.night-config:core:3.6.3 -> 3.6.4
+|    |    |    +--- com.electronwill.night-config:toml:3.6.3 -> 3.6.4 (*)
+|    |    |    +--- cpw.mods:modlauncher:9.0.+ -> 9.1.0 (*)
+|    |    |    \--- net.minecraftforge:coremods:5.0.+ -> 5.0.2 (*)
+|    |    +--- commons-io:commons-io:2.5 -> 2.11.0
+|    |    \--- net.minecraftforge:eventbus:5.0.+ -> 5.0.7 (*)
+|    +--- net.minecraftforge:fmlloader:1.18.1-39.0.85 (*)
+|    +--- net.minecraftforge:javafmllanguage:1.18.1-39.0.85
+|    |    +--- net.minecraftforge:fmlloader:1.18.1-39.0.85 (*)
+|    |    \--- net.minecraftforge:fmlcore:1.18.1-39.0.85 (*)
+|    \--- net.minecraftforge:mclanguage:1.18.1-39.0.85
+|         +--- net.minecraftforge:fmlloader:1.18.1-39.0.85 (*)
+|         \--- net.minecraftforge:fmlcore:1.18.1-39.0.85 (*)
+\--- mezz.jei:jei-1.18.1:{strictly 9.4.1.106_mapped_parchment_2022.02.13-1.18.1} -> 9.4.1.106_mapped_parchment_2022.02.13-1.18.1
+
+testRuntimeOnly - Runtime only dependencies for source set 'test'. (n)
+No dependencies
+
+(*) - dependencies omitted (listed previously)
+
+(n) - Not resolved (configuration is not meant to be resolved)
+
+A web-based, searchable dependency report is available by adding the --scan option.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+See https://docs.gradle.org/7.3/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 9s
+1 actionable task: 1 executed
