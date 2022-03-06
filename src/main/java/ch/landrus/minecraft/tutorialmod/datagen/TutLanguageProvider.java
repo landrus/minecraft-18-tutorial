@@ -25,6 +25,9 @@ public class TutLanguageProvider extends LanguageProvider {
         add(Registration.MY_ORE_NETHER.get(), "My ore");
         add(Registration.MY_ORE_END.get(), "My ore");
         add(Registration.MY_ORE_DEEPSLATE.get(), "My ore");
+
+        add(Registration.RAW_MY_CHUNK.get(), "My Raw Chunk");
+        add(Registration.MY_INGOT.get(), "My Ingot");
     }
 
 }

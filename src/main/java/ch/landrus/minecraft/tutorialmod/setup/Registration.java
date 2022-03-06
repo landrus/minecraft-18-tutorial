@@ -1,10 +1,15 @@
 package ch.landrus.minecraft.tutorialmod.setup;
 
+import ch.landrus.minecraft.tutorialmod.TutorialMod;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -35,6 +40,12 @@ public class Registration {
     public static final RegistryObject<Item> MY_ORE_END_ITEM = fromBlock(MY_ORE_END);
     public static final RegistryObject<Block> MY_ORE_DEEPSLATE = BLOCKS.register("my_ore_deepslate", () -> new Block(ORE_PROPERTIES));
     public static final RegistryObject<Item> MY_ORE_DEEPSLATE_ITEM = fromBlock(MY_ORE_DEEPSLATE);
+
+    public static final RegistryObject<Item> RAW_MY_CHUNK = ITEMS.register("raw_my_chunk", () -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> MY_INGOT = ITEMS.register("my_ingot", () -> new Item(ITEM_PROPERTIES));
+
+    public static final Tags.IOptionalNamedTag<Block> MY_ORE = BlockTags.createOptional(new ResourceLocation(MOD_ID, "my_ore"));
+    public static final Tags.IOptionalNamedTag<Item> MY_ORE_ITEM = ItemTags.createOptional(new ResourceLocation(MOD_ID, "my_ore"));
 
     private static <B extends Block> RegistryObject<Item> fromBlock(RegistryObject<B> block) {
         return ITEMS.register(block.getId().getPath(), () -> new BlockItem(block.get(), ITEM_PROPERTIES));

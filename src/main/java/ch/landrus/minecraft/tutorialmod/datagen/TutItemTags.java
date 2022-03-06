@@ -25,12 +25,13 @@ public class TutItemTags extends ItemTagsProvider {
                 .add(Registration.MY_ORE_NETHER_ITEM.get())
                 .add(Registration.MY_ORE_END_ITEM.get())
                 .add(Registration.MY_ORE_DEEPSLATE_ITEM.get());
-
-//        tag(Registration.MY_ORE_ITEM)
-//                .add(Registration.MY_ORE_OVERWORLD_ITEM.get())
-//                .add(Registration.MY_ORE_NETHER_ITEM.get())
-//                .add(Registration.MY_ORE_END_ITEM.get())
-//                .add(Registration.MY_ORE_DEEPSLATE_ITEM.get());
+        tag(Tags.Items.INGOTS)
+                .add(Registration.MY_INGOT.get());
+        tag(Registration.MY_ORE_ITEM)
+                .add(Registration.MY_ORE_OVERWORLD_ITEM.get())
+                .add(Registration.MY_ORE_NETHER_ITEM.get())
+                .add(Registration.MY_ORE_END_ITEM.get())
+                .add(Registration.MY_ORE_DEEPSLATE_ITEM.get());
     }
 
     @Override

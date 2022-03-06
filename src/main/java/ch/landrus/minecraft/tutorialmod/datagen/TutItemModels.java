@@ -22,6 +22,13 @@ public class TutItemModels extends ItemModelProvider {
         withExistingParent(Registration.MY_ORE_NETHER_ITEM.get().getRegistryName().getPath(), modLoc("block/my_ore_nether"));
         withExistingParent(Registration.MY_ORE_END_ITEM.get().getRegistryName().getPath(), modLoc("block/my_ore_end"));
         withExistingParent(Registration.MY_ORE_DEEPSLATE_ITEM.get().getRegistryName().getPath(), modLoc("block/my_ore_deepslate"));
+
+        singleTexture(Registration.RAW_MY_CHUNK.get().getRegistryName().getPath(),
+            mcLoc("item/generated"),
+            "layer0", modLoc("item/raw_my_chunk"));
+        singleTexture(Registration.MY_INGOT.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/my_ingot"));
     }
 
 }
