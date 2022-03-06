@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "tutorialmod:my_ore_overworld",
-    "tutorialmod:my_ore_nether",
-    "tutorialmod:my_ore_end",
-    "tutorialmod:my_ore_deepslate"
-  ]
-}
